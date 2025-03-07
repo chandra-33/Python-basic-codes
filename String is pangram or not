@@ -1,0 +1,8 @@
+import string
+def is_pangram(s):
+    alphabet = set(string.ascii_lowercase)  
+    s = s.lower()
+    return alphabet.issubset(set(s)) 
+word=input()
+print(is_pangram(word))
+
